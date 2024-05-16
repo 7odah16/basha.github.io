@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>مطعم الباشا </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+    body{
+        background-color:rgb(50, 42, 42);
+    }
+#basha1
+{
+    font-size: 35px;
+font-family:traditional arabic;
+font-size:24px;
+color:rgb(150, 123, 123);
+}
+img{
+    border: 4px solid red ;
+}
+</style>
+<h1 ID="BASHA1" align="center"> مطعم الباشا</h1>
+<p align="center">جربنا وما رح تنسانا</p>
+<form id="emailForm">
+    <label id="hi" for="message">طلبك يوحش:</label><br>
+    <textarea id="message" name="message"  cols="50"></textarea><br>
+    <button id="btn1" type="submit">Send Email</button>
+  </form>
+  
+  <script>
+  document.getElementById("emailForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+  
+
+    var message = document.getElementById("message").value;
+  
+
+    window.location.href = "mailto:nabilsimahmoud1@gmail.com?body=" + encodeURIComponent(message);
+  });
+  </script>
+  
+</script>
+</body>
+</html>

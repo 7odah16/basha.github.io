@@ -1,0 +1,16 @@
+#emailForm{
+    display: flex;
+    gap: 2px;
+}
+#hi{
+}
+#message{
+    background-color: rgb(67, 63, 57);
+    border-radius: 10px;
+
+
+}
+#btn1{
+    background-color: darkgrey;
+border-radius: 10px;
+}
